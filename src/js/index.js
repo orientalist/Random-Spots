@@ -3,7 +3,7 @@
 import Geo from "./geo.js";
 import Venue from "./venue.js";
 import Weather from "./weather.js";
-import GMap from './gmap.js';
+//import GMap from './gmap.js';
 
 window.onload = function () {
   const controller = new Controller();
