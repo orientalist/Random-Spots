@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Travel Spot</title>
+    <link
+      rel="stylesheet"
+      href="https://meyerweb.com/eric/tools/css/reset/reset200802.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="src/css/gmap.css">
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="search-panel">
+        <label for="city">城市：</label>
+        <input
+          type="text"
+          name="city"
+          id="city"
+          placeholder="請輸入城市"
+          value="台北"
+        />
+        <button id='search'>搜尋</button>
+      </div>
+      <div class="result">
+          <div class="weather">
+              <p>天氣預測:</p>
+              <div class="result" id='forecast'></div>
+          </div>
+          <div class="spots">
+              <p>附近景點:</p>
+              <div class="result" id='vanues'></div>
+          </div>
+      </div>
+      <div class="map" id='map'></div>
+    </div>
+
+    <script type="module" src="src/js/index.js"></script>
+  </body>
+</html>
